@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <!--Establecer el favicon-->
+       <link rel="icon" type="image/jpg" href="imagenes/favicon_2.png">
+       <title>MITWISS</title>
+       <meta charset="utf-8">
+       <!--Establecer el viewport para el responsive-->
+       <meta name="view-port"content="width=device-width; initial-scale=1.0; maximum-scale= 1.0; user-scalable= 0;">
+       <!--Linkeo el icono del menu-->
+      <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined"
+        rel="stylesheet"
+      />
+      <!--Linkeo el archivo CSS-->
+      <link rel="stylesheet" href="CSS_unidad5.css" />
+      <!--Linkeo el archivo de javascript-->
+      <script src="javascript_unidad5.js" type="text/javascript"></script>
+      <!--Bootstrap CSS-->
+      <link rel="stylesheet" href="css/bootstrap.min.css">              
+   
+    </head>
+    <body>
+        <!--Inicio menu responsive Js-->
+      <div id="menu_desplegable">
+        <a href="#body" onclick="hambur()"
+          ><span class="material-icons-outlined"> subject </span>
+        </a>
+        <nav id="menu_flotante">
+          <ul>
+            <li><a href="#nosotros">NOSOTROS</a></li>
+            <li><a href="#turnos">TURNOS</a></li>
+            <li><a href="#ubicaciones">UBICACIONES</a></li>
+            <li><a href="#contactanos">CONTACTANOS</a></li>
+            <li><a href="#paciente">PACIENTE</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!--FIN menu responsive Js--> <!--deded-->
+      <header id="head">
+        <div id="logo"><h1>MITWISS</h1></div>
+        <nav id="menu">
+          <ul>
+            <li><a href="#nosotros">NOSOTROS</a></li>
+            <li><a href="#turnos">TURNOS</a></li>
+            <li><a href="#ubicaciones">UBICACIONES</a></li>
+            <li><a href="#contactanos">CONTACTANOS</a></li>
+            <li><a href="#paciente">PACIENTE</a></li>
+            
+          </ul>
+        </nav>
+      </header>
+      <section id="caja_fija">
+        <p>Centro de salud privado || MITWISS</p>
+      </section>
+      <section id="imagen_boton">
+        <div>
+          <a href="https://www.youtube.com/" target="balnk">PRESENTACION</a>
+        </div>
+      </section>
+
+      <section id="paciente">
+        <div id="contendedor" class="container-fluid">
+          <div id="row_data" class="row">
+            <div id="datos_personales" class="col-lg-6  col-md-6  col-sm-6  col-xs-6 ">
+            </div>
+            <div id="historial" class="col-lg-6  col-md-6  col-sm-6  col-xs-6 "></div>
+          </div>
+      </section> 
+
+      <!--Inicio de la interccion JavaScript-->
+     <!-- <section id="datos_paciente">
+        <aside>
+          <script>
+            document.write(
+              "<h3>" + "Nombre del paciente: " + nombre_paciente + "." + "</h3>"
+            );
+            document.write("<h3>" + "Edad: " + edad + "." + "</h3>");
+            document.write("<h3>" + "DNI: " + dni + "." + "</h3>");
+            document.write("<h3>" + "Prepaga: " + obra_social + "." + "</h3>");
+          </script>
+        </aside>
+      </section>-->
+      <!--FIN de la interccion JavaScript-->
+      <section id="nosotros">
+        <div class="equipo">
+          <h3>Equipo</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>    
+        <div class="profesionales">
+          <h3>Profesionales</h3>
+          <p>Lorem is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        </div>
+        <div class="instalaciones">
+          <h3>Instalaciones</h3>
+          <p>Lorem is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        </div>
+      </section>
+      <section id="turnos">
+        <!-- Titulo invisible en los turnos-->
+        <nav id="nav">
+          <a href="#body" id="medico_clinico" onmouseover="show0('titulo1')" onmouseout="hidden0('titulo1')"><h4 id="titulo1">Medico Clínico</h4></a>
+          <a href="#body" id="odontologia" onmouseover="show0('titulo2')" onmouseout="hidden0('titulo2')"><h4 id="titulo2">Odontología</h4></a>
+          <a href="#body" id="oftalmologia" onmouseover="show0('titulo3')" onmouseout="hidden0('titulo3')"><h4 id="titulo3">Oftalmología</h4></a>
+          <a href="#body" id="dermatologia" onmouseover="show0('titulo4')" onmouseout="hidden0('titulo4')"><h4 id="titulo4">Dermatología</h4></a>
+        </nav>
+      </section>
+      <section id="ubicaciones">
+        <div id="mapa"></div>
+        <div class="titulo"><h3>Nuestros Hospitales</h3></div>
+        <nav class="provincias">
+          <a href="https://www.google.com.ar/maps" target="blank">Córdoba (Barrio Nueva Córdoba, Av Hiploito Yirigoyen 100).</a
+          ><a href="https://www.google.com.ar/maps" target="blank">Córdoba (Barrio Centro, Av General Paz 100).</a
+          ><a href="https://www.google.com.ar/maps" target="blank">Córdoba (Villa Allende, Av Goycoechea).</a
+          ><a href="https://www.google.com.ar/maps" target="blank">Córdoba (Rio Cuarto, Av Colon).xd</a
+          ><a href="https://www.google.com.ar/maps" target="blank">Córdoba (Villa Maria, Av 9 de Julio).</a
+          ><a href="https://www.google.com.ar/maps" target="blank">Córdoba (Villa Carlos Paz, Av Libertad).</a>
+        </nav>
+      </section>
+      <footer id="contactanos">
+        <nav class="up"><a href="#logo">INICIO</a></nav>
+        <nav class="redes">
+          <a
+            class="whatsapp"
+            href="https://web.whatsapp.com/"
+            target="blank"
+          ></a
+          ><a
+            class="instagram"
+            href="https://www.instagram.com/"
+            target="blank"
+          ></a>
+        </nav>
+      </footer>
+      <!--Js propio-->
+      <script src="DOM.js" type="text/javascript"></script>
+      <!--Bootstrap Js-->
+      <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
+</DOCTYPE html>

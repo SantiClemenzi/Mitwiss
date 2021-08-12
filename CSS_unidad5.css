@@ -1,0 +1,588 @@
+body {
+	margin: 0px;
+	background-color: #e3e3e3 !important;
+	font-family: Arial, Helvetica, sans-serif;
+}
+header,
+section,
+footer {
+	width: 85%;
+	max-width: 1080px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+header{
+	background-color: #fff;
+	color: #474747;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#logo {
+	letter-spacing: 8px;
+	margin-left: 80px;
+}
+#menu ul {
+	margin-right: 40px;
+}
+#menu ul li {
+	display: inline;
+	margin-left: 4px;
+}
+#menu ul li a {
+	display: inline-block;
+	text-decoration: none;
+	color: #474747;
+	padding: 6px;
+	padding-bottom: 1px;
+	transition: all 0.51s linear;
+}
+/*#menu ul li a:hover,
+#menu ul li a:active{
+    letter-spacing: 1px;
+}
+#menu ul li a:after,
+#menu ul li a:before{
+    backface-visibility: hidden;
+    border: 1px solid rgba(red, 0);
+    bottom: 0px;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+#menu ul li a:hover:after,
+#menu ul li a:hover:before{
+    backface-visibility: hidden;
+    border-color: red;
+    transition: width 350ms ease-in-out;
+    width: 70%;
+}
+#menu ul li a:hover:before{
+    bottom: auto;
+    top: 0;
+    width: 70%;
+}*/
+#menu ul li a:hover,
+#menu ul li a:active {
+	letter-spacing: 1px;
+	border-bottom: 1px solid #ec0909;
+}
+#caja_fija {
+	height: 48px;
+	background-color: #222;
+	color: #e3e3e3;
+	display: flex;
+	align-items: center;
+	position: sticky;
+	top: 0px;
+	z-index: 30;
+}
+#caja_fija p {
+	margin-left: 80px; 
+	margin-bottom: 0px;
+}
+#imagen_boton {
+	height: 500px;
+	background-image: url(imagenes/portada.jpg);
+	background-size: cover;
+}
+#imagen_boton div {
+	position: relative;
+	top: 75%;
+	left: 10%;
+}
+#imagen_boton div a {
+	padding: 20px;
+	background-color: #474747;
+	color: #fff;
+	border-radius: 20px;
+	text-decoration: none;
+	transition: all 0.35s linear;
+	z-index: 10;
+}
+#imagen_boton div a:hover {
+	background-color: #b1aaaa;
+}
+#paciente{
+	height: auto;
+	padding: 2.5%;
+	background-color: #ec0909;
+	display: flex;
+	align-items: center;
+}
+#contenedor{
+	padding: 0px;
+}
+#datos_personales{
+	background-color: #3f3838;
+	height: 200px;
+	padding: 0px;
+}
+#historial{
+	background-color: #1c330c;
+	height: 200px;
+	padding: 0px;
+}
+/*#datos_paciente {       /*Caja del script para los datos del paciente
+	height: 200px;
+	background-color: #fff;
+	border: 2px solid #000;
+}
+#datos_paciente aside {
+	margin: 3%;
+}*/
+#nosotros {
+	height: 550px;
+	/*height: auto;*/
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#nosotros div {
+	float: left;
+	margin-left: 0.1%;
+	margin-right: 0.1%;
+	height: 90%;
+	width: 29.0%;
+	padding: 2%; /*nuevo acote*/
+	background-color: rgb(197, 191, 191);
+	font-size: 85%;
+}
+/*#nosotros div h3 {
+	text-align: center;
+	height: 5%;
+	margin: 5% 20%;
+}*/
+#nosotros div h3 {
+	text-align: center;
+    align-self: center;
+    /* height: 5%; */
+    height: auto;
+    width: auto;
+    margin: 5% 20%;
+}
+#nosotros div p {
+	height: 80%;
+	color: #000;
+	position: relative;
+	top: 6%;
+	bottom: 10%;
+}
+#turnos {                             
+	height: 300px;
+	background-color: #b1aaaa;
+	display: flex;
+	align-items: center;
+}
+#nav {
+	height: 40%;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	align-items: center;
+}
+#nav a {
+	text-decoration: none;
+	display: block;
+	height: 100%;
+	width: 25%;
+	margin: 1%;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+#nav a:hover{
+	box-shadow: 5px 5px 20px #474747;
+}
+#nav a h4{
+	display: none;
+	text-decoration: none;
+	color: #3f3838;
+	text-shadow:
+	1px 1px 0px #3f3838
+	2px 2px 0px #3f3838
+	3px 3px 0px #3f3838
+	4px 4px 0px #3f3838
+	5px 5px 0px #3f3838
+	6px 6px 0px #3f3838
+	7px 7px 0px #3f3838;
+}
+#medico_clinico{
+	background-image: url(imagenes/medico_clinico.jpg);
+	background-size: cover;
+}
+#odontologia{
+	background-image: url(imagenes/odontologia.jpg);
+	background-size: cover;
+}
+#oftalmologia{
+	background-image: url(imagenes/oftalmologia.jpeg);
+	background-size: cover;
+}
+#dermatologia{
+	background-image: url(imagenes/dermatologia.jpg);
+	background-size: cover;
+}
+#ubicaciones {
+	height: 250px;
+	margin-top: 0px;
+	background-color: rgba(255, 247, 247, 0.966);
+}
+#mapa {                                           
+	background-image: url(imagenes/maps.jpg);
+	height: 250px;
+	width: 200px;
+	float: right;                          
+}
+.titulo {
+	position: relative;
+	top: 5%;
+	left: 2%;
+}
+.titulo h3 {
+	display: inline;
+	width: auto;
+	height: 30px;
+}
+.provincias {
+	position: relative;
+	top: 15%;
+	left: 2%;
+}
+.provincias a {
+	text-decoration: none;
+	color: #000;
+	display:block;
+	height: 20px;
+	width: auto;
+	margin: 3px;
+}
+#contactanos {
+	height: 500px;
+	background-color: #222;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	text-align: center;
+}
+.up {
+	position: relative;
+	top: 10%;
+	background-color: #fff;
+	height: 0px;
+	animation-name: swipp-up;
+	animation-duration: 0.75s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+}
+.up:hover {
+	animation-play-state: paused;
+}
+.up a {
+	text-decoration: none;
+	background-color: #474747;
+	color: #fff;
+	padding: 8px 20px;
+	border-radius: 15px;
+}
+.up a:hover {
+	color: #fff !important;
+}
+@keyframes swipp-up {
+	0% {
+		top: 10%;
+	}
+	50% {
+		top: 5%;
+	}
+	100% {
+		top: 2.5%;
+	}
+}
+.redes {
+	position: relative;
+	top: 35%;
+	height: 0px;
+}
+.redes a {
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 20px;
+	width: 100px;
+	height: 100px;
+	margin: 5%;
+}
+.whatsapp {
+	background-image: url(imagenes/wsp2.png);
+	background-size: cover;
+}
+.instagram {
+	background-image: url(imagenes/instagram3.jpg);
+	background-size: cover;
+}
+#menu_desplegable {
+	display: none;
+}
+
+@media (max-width: 1057px) and (min-width: 800px) {
+	header {
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		flex-wrap: nowrap;
+		font-size: 0.75rem;
+	}
+	#logo {
+		margin: 0px;
+	}
+	#menu ul {
+		margin-top: 0px;
+	}
+	#menu ul li {
+		margin: 0;
+	}
+	#caja_fija {
+		display: flex;
+		text-align: center;
+		justify-content: center;
+	}
+	#caja_fija p {
+		margin-left: 0px;
+	}
+	#imagen_boton {
+		background-image: url(imagenes/portada2.jpg);
+		background-size: cover;
+	}
+	#imagen_boton div {
+		top: 85%;
+	}
+	#imagen_boton div a {
+		font-size: 0.7rem;
+		padding: 15px;
+		background-color: hsl(200, 76%, 73%);
+	}
+	#nosotros {
+		height: auto;
+		display: flex;
+		flex-direction: column;
+	}
+	#nosotros div {
+		margin: 5%;
+		width: auto;
+		height: 300px;
+	}
+	#nosotros div{
+		font-size: 0.90rem;
+	}
+	/*#datos_paciente {  /*Datos de paciente con Js
+		height: auto;
+	}
+	#datos_paciente aside {
+		font-size: 0.78rem;
+	}*/
+	/*#turnos {
+		justify-content: center;
+		height: auto;
+	}
+	#nav {                
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		margin: 5%;
+	}
+	#nav a {
+		height: 60px;
+		width: 140px;
+	}
+	h4{
+		font-size: 15px;
+	}*/
+	#mapa {
+		background-image: none;
+		height: 0px;
+		width: 0px;
+	}
+	.titulo {
+		top: 9.5%;
+		left: 5.5%;
+		height: 0%;
+	}
+	.titulo h3 {
+		margin: 0px;
+		width: auto;
+	}
+	.provincias {
+		top: 25%;
+		left: 5%;
+		height: 0%;
+	}
+	.up a {
+		padding: 0.75rem 0.75rem;
+	}
+	#menu_desplegable {
+		display: none;
+	}
+}
+
+@media (max-width: 799px) {
+	header {
+		display: flex;
+		justify-content: space-between;
+		height: auto;
+	}
+	#logo {
+		font-size: 00.75rem;
+		margin-left: 10%;
+	}
+	#menu {
+		font-size: 00.75rem;
+		margin-right: 5%;
+		margin-left: 0;
+		margin-top: .5%;
+		margin-bottom: .5%;
+	}
+	#menu ul {
+		margin: 0;
+		padding: 0;
+	}
+	#menu ul li {
+		display: block;
+		padding: 0px;
+	}
+	#caja_fija {
+		display: flex;
+		justify-content: center;
+		margin-top: 0px;
+	}
+	#caja_fija p {
+		margin: 0;
+		font-size: 0.9rem;
+	}
+	#imagen_boton {
+		background-image: url(imagenes/portada2.jpg);
+		background-size: cover;
+	}
+	#imagen_boton div {
+		top: 85%;
+	}
+	#imagen_boton div a {
+		font-size: 0.7rem;
+		padding: 15px;
+		background-color: hsl(200, 76%, 73%);
+	}
+	#nosotros {
+		height: auto;
+		display: flex;
+		flex-direction: column;
+	}
+	#nosotros div {
+		margin: 5%;
+		width: auto;
+		height: 300px;
+	}
+	#nosotros div{
+		font-size: 0.80rem;
+	}
+	/*#datos_paciente {   /*Datos de paciente con Js
+		height: auto;
+	}
+	#datos_paciente aside {
+		font-size: 0.78rem;
+	}*/
+	#turnos {
+		justify-content: center;
+		height: auto;
+	}
+	#nav {               
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		margin: 5%;
+	}
+	#nav a {
+		height: 60px;
+		width: 140px;
+	}
+	#nav a h4{
+		font-size: 0.88rem;
+	}
+	#mapa {
+		background-image: none;
+		height: 0px;
+		width: 0px;
+	}
+	.titulo {
+		top: 9.5%;
+		left: 5.5%;
+	}
+	.titulo h3 {
+		margin: 0px;
+	}
+	.provincias {
+		top: 15%;
+		left: 5%;
+		height: 0%;
+		font-size: 00.95rem;
+	}
+	.up a {
+		padding: 0.75rem 0.75rem;
+	}
+	.redes a {
+		width: 65px;
+		height: 65px;
+	}
+	#menu_desplegable {
+		display: block;
+		position: sticky;
+		top: 10%;
+		left: 94.5%;
+		height: 0px;
+		width: 0px;
+		margin: 0%;
+		z-index: 40;
+	}
+	#menu_desplegable a {
+		text-decoration: none;
+		color: black;
+	}
+	.material-icons-outlined {
+		background-color: #b1aaaa;
+		border-radius: 10px;
+		margin: 0%;
+	}
+	#menu_flotante {
+		height: auto;
+		width: 110px;
+		padding: 8px;
+		background-color: rgb(180, 175, 175, 0.8);
+		border-radius: 10px;
+		position: relative;
+		right: 120px;
+		display: none;
+		justify-content: center;
+	}
+	#menu_flotante ul {
+		font-size: 00.88rem;
+		margin: 0px;
+		padding: 0px;
+	}
+	#menu_flotante ul li {
+		display: inline-block;
+		margin: 2px;
+	}
+	#menu_flotante ul li {
+		text-decoration: none;
+		color: #000;
+	}
+}
